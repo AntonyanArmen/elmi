@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('subset-Ubuntu-Medium.eot');
+	src: url('subset-Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+		url('subset-Ubuntu-Medium.woff') format('woff'),
+		url('subset-Ubuntu-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
