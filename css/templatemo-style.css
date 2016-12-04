@@ -1,6 +1,6 @@
 body
 	{ 	
-        color: #000;
+        color: #333;
 		font-family: 'UbuntuMedium', 'Open Sans', sans-serif;
 		font-weight: 300;
 		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
@@ -19,7 +19,7 @@ h2
 	{
 		text-align: center;
 		font-size: 40px;
-		padding-bottom: 20px;
+        font-weight: 600;
 	}	
 /* end h2 */
 
@@ -33,7 +33,7 @@ h2
 .section-header
     {
         padding-top: 25px;
-        padding-bottom: 35px;
+        padding-bottom: 35px;        
     }
 /* end about team service portfolio contact */
 
@@ -161,35 +161,56 @@ header .social-icon li a
 /* start nagivation */
 .navbar-default
 	{
-		background: #fff;
+
+		background-color: #0580f2;
 		border: none;
 		box-shadow: none;
 		margin: 0 !important;
 	}
+.navbar-default .container
+{
+        color: #f8d800;    
+}
 .navbar-default .navbar-brand
 	{
-		font-weight: 500;
+        color: #f8d800;  
+        text-shadow: 1px 1px 2px black;
+		font-weight: 600;
 		font-size: 30px;
 		height: 70px;
 		line-height: 40px;
 		padding: 12px 0px 0px 12px;
 	}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-nav li a:hover, 
+.navbar-default .navbar-nav li a:focus
+{
+    color: #fffa00;
+    text-shadow: 3px 3px 2px black;
+    
+}
 .navbar-default .navbar-nav li a
 	{
+        color: #f8d800;
+        background: #2d97fa;
+        text-shadow: 1px 1px 2px black;
 		font-weight: bold;
 		font-size: 13px;
 		height: 70px;
-		line-height: 40px;
+		line-height: 40px;        
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;        
 	}
 
-.navbar-default .navbar-nav > li > a.current { 
-	color: #28A7E9;
-    transform: scale(1.1);
+.navbar-default .navbar-nav > li > a.current 
+{ 	
+    border-bottom: 6px solid orange;
 }
 .navbar-default .navbar-nav li a:hover
 {
-    color: #28A7E9; 
-   filter: brightness(0.5);
+    background: #2c75ff;
+    line-height: 50px;        
 }
 .templatemo-nav {
 	border-radius: 0;	
@@ -223,7 +244,7 @@ header .social-icon li a
         background-position: center, 0 0 ;
         */
         background-color: #2873b9;
-        background-image: url(../images/back/mainBackgroung2.jpg), url(../images/back/2.jpg);
+        background-image: url(../images/back/mainBackgroung22.jpg), url(../images/back/2.jpg);
         background-position: center, 0px 0px;
         background-repeat: no-repeat, repeat-x;
         background-size: contain, cover;
@@ -244,39 +265,19 @@ header .social-icon li a
 #home h2
 	{
         color: #FFD427;
-		font-size: 40px;
-		padding-bottom: 10px;
         text-shadow: 3px 3px 5px black;
+        font-family: 'Seymour One', Arial;
+        font-weight: 100;
+        font-size: 38px;        
 	}
 .home-row
 {
     position: relative;
-    top:-3em;
-}
-.home-row_bg
-{
-    padding-right: 0;
-    position: absolute;
-    width: 100%;
-    height: 124px;
-    background-color: #0D4478;
-    opacity: .7;
-    top: 184px;
-    border-radius: 10px;    
+    top:10em;
 }
 .home-col
 {
-        transform: translateY(14em);
-}
-.home-col p 
-{
-        font-size-adjust: 1em;
-        line-height: normal;
-        color: #FFE888;
-}
-.col-logo 
-{
-    padding-left: 0;
+        transform: translateY(12em);
 }
 figcaption
 {
@@ -292,97 +293,113 @@ figcaption
     }
 /* end home */
 
-/* start about */
+/* start about 329977*/
 #news
-{
-    background-color: aquamarine;
-    background-image: url('../images/back/news-bg.gif'), url('../images/back/greyfloral.png');
-    background-repeat: repeat-x, repeat;
-    background-attachment: scroll ,fixed;
-    background-blend-mode: normal, luminosity;
-}
-#news .section-header *
-{
-    text-shadow: 3px 3px 5px #FFE0B3;
-}
-#news h2
-{    
-    color: darkred;
-}
-.media
-{
-    -webkit-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-    min-height: 250px;
-    background-color: #e0ffff;
-    border-radius: 5px;    
-}
-.media-body
-{
-    padding-right: 15px;
-}
-#news .media-heading-wrapper
-	{
-		padding-bottom: 32px;
-	}
-#news .media-heading-wrapper .fa
-	{
-		border: 2px dotted #60B0FD;
-		border-radius: 2px;
-		color: #fff;
-		font-size: 24px;
-		width: 60px;
-		height: 60px;
-		line-height: 60px;
-		text-align: center;
-        margin: 1px 20px 20px 1px;
-	}
-#news .media-heading-wrapper .fa-key
-{
-  color: green;
-}
-#news .media-heading-wrapper .fa-users
-{
-    color: orchid
-}
-#news .media-heading-wrapper .fa-thumbs-up
-{
-    color: #FFB954;
-}
-#news .media-heading-wrapper h3
-	{
-		font-size: 18px;
-		font-weight: bold;
-		padding-top: 20px;
-		padding-left: 52px;
-        color: #0580f2;
-	}
+    {
+        background-color: aquamarine;
+        background-image: url('../images/back/greyfloral.png');
+        background-attachment: fixed;
+        background-blend-mode:  luminosity;
+    }
+    #news .section-header 
+        {
+            background-color: aquamarine;
+            border: 20px solid rgba(255,255,255,.5);
+            border-radius: 90px;
+            margin: 10px 0;
+            background-image: url('../images/back/contacts-bg3.png'), url('../images/back/jump.png');
+            background-repeat: no-repeat, no-repeat;    
+            background-position: 10% 50%, 90% 50%;
+
+        }
+        #news .section-header *
+            {
+                text-shadow: 1px 1px 3px #006F4B;
+            }
+    #news h2
+        {    
+            color: #00458D;
+        }
+    .media
+        {
+            min-height: 300px;
+            background-color: #e0ffff;
+            border:1px solid #00FFAB;
+            border-radius: 5px;    
+            padding-bottom: 10px;
+        }
+    .media-body
+        {
+            padding-right: 30px;
+            font-family: 'Scada', sans-serif;
+            line-height: 1.8em;
+            letter-spacing: 0.4px;
+            font-size: 15px;
+            color: #333;
+        }
+    #news .media-heading-wrapper
+        {
+            padding-bottom: 15px;
+        }
+        #news .media-heading-wrapper .fa
+            {
+                font-size: 26px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                margin: 5px 15px 15px 5px;
+            }
+                #news .media-heading-wrapper .fa-key
+                    {
+                      color: #FF5600;
+                    }
+                #news .media-heading-wrapper .fa-users
+                    {
+                        color: orchid
+                    }
+                #news .media-heading-wrapper .fa-thumbs-up
+                    {
+                        color: #FFB954;
+                    }
+        #news .media-heading-wrapper h3
+            {
+                font-size: 23px;
+                font-weight: bold;
+                font-family: 'Ubuntu';
+                padding-top: 20px;
+                padding-left: 52px;
+                color: #1387FF;
+            }
 /* end about */
 
 /* start team */
 #team
-{
-    background-color: #f4edd8;
-    background-image: url('../images/back/service-bg.gif');
-    background-repeat: repeat-x;    
-    background-blend-mode: normal;
-}
-#team .section-header
-{
-    background-image: url('../images/back/star%20swim.gif');
-    background-repeat: no-repeat;    
-    background-position:90% 50%;
-}
-#team h2
-{
-    color: #635378;
-    text-shadow: 2px 2px 4px #eeeeef;
-}
-#team .team-wrapper
-	{
-		background: #fff;
-		padding: 20px;
-	}
+    {
+        background-color: #f4eacd;
+        background-image: url('../images/back/service-bg.gif');
+        background-repeat: repeat-x;    
+        background-blend-mode: normal;
+    }
+    #team .section-header
+        {
+            background-image: url('../images/back/team-bg.png'), url('../images/back/star_swim.gif');;
+            background-repeat: no-repeat, no-repeat;    
+            background-position: 10%  50%, 90% 50%;
+        }
+    #team h2
+        {
+            color: #635378;
+            text-shadow: 2px 2px 4px #eeeeef;
+        }
+        #team .team-wrapper
+        {
+            background: #fffbf0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            color: #333;
+        }
 /* end team */
 
 /* start service */
@@ -393,29 +410,38 @@ figcaption
     background-image:  url('../images/back/skulls.png');
     background-blend-mode: luminosity;
 }
-#service .section-header
-{
-    background-image:  url('../images/back/bath.gif'), url('../images/back/baby_pool_sun_glasses.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: 10% 50%, 90% 50%;
-}
-#service h2
-{
-    color: yellow;
-    text-shadow: 2px 2px 4px #222;
-}
-#service h4
-	{
-		color: orange;
-		font-weight: 600;
-		padding-top: 10px;
-		padding-bottom: 14px;
-	}
-#service p
-{
-    text-align: justify;
-
-}
+    #service .section-header
+        {
+            background-color: #e1edf5;
+            background-image:  url('../images/back/bath.gif'), url('../images/back/news-bg2.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: 10% 50%, 90% 50%;
+            border: 20px solid #c4e4ff;
+            border-radius: 90px;
+            margin: 10px 0;
+        }
+    #service .col-md-12:nth-child(2)
+        {
+            background-color: aliceblue;
+            border-radius: 15px;
+            
+        }
+    #service h2
+        {
+            color: yellow;
+            text-shadow: 2px 2px 4px #222;
+        }
+    #service h4
+        {
+            color: orange;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-bottom: 14px;
+        }
+    #service p
+        {
+            text-align: justify;
+        }
 /* end service */
 
 /* start portfolio */
@@ -483,36 +509,42 @@ figcaption
         background-attachment: scroll ;
         background-position: 0% 0%, 100% 100%;		
 	}
-#contact h2
-{
-    text-shadow: 2px 2px 4px #333;
-}
-#contact address
-	{
-		padding-top: 30px;
-	}
-#contact address .address-title
-	{
-		font-weight: bold;
-		font-size: 20px;
-		padding-bottom: 10px;
-	}
-#contact address span
-	{
-		display: block;
-		padding-bottom: 30px;
-	}
-#contact address .fa
-	{
-		border: 1px solid #fff;
-		border-radius: 2px;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		margin-right: 10px;
-		margin-bottom: 10px;
-	}
+    #contact .section-header
+        {
+            background-image: url('../images/back/kids_pool_sun_glasses.png'), url('../images/back/baby_pool_sun_glasses.png');
+            background-repeat: no-repeat, no-repeat;    
+            background-position: 10% 50%, 90% 50%;
+        }
+    #contact h2
+        {
+            text-shadow: 2px 2px 3px #333;
+        }
+    #contact address
+        {
+            padding-top: 30px;
+        }
+    #contact address .address-title
+        {
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    #contact address span
+        {
+            display: block;
+            padding-bottom: 30px;
+        }
+    #contact address .fa
+        {
+            border: 1px solid #fff;
+            border-radius: 2px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
 /* end contact */
 
 /* start copyright */
@@ -545,8 +577,7 @@ figcaption
 	}
 .social-icon li a
 	{
-        background-color: darkcyan;
-		border: 1px solid #fff;
+        background-color: #28a7e9;
 		border-radius: 2px;
 		color: #fff;
 		width: 40px;
@@ -560,8 +591,8 @@ figcaption
 	}
 .social-icon li a:hover
 	{
-        color: black;
-		background: #28a7e9;
+        color: #28a7e9;
+		background: #eee;
 		border-color: transparent;
 	}
 /* end social icon */
