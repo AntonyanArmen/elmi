@@ -212,6 +212,19 @@ header .social-icon li a
     background: #2c75ff;
     line-height: 50px;        
 }
+.navbar-default .navbar-toggle .icon-bar 
+{
+    background-color: #FFD427;
+}
+.navbar-default .navbar-toggle
+{
+    background: #2d97fa;
+    border-color: #fffa00;
+}
+.navbar-default .navbar-toggle:hover
+{
+    background: #28a7e9;
+}
 .templatemo-nav {
 	border-radius: 0;	
 	width: 100%;
@@ -237,19 +250,13 @@ header .social-icon li a
 /* start home */
 #home
 	{
-        /*
-        background: url('../images/back/mainBackgroung.jpg') no-repeat,                   url('../images/back/2.jpg') no-repeat center center fixed;
-        
-        background-size: contain, cover;
-        background-position: center, 0 0 ;
-        */
         background-color: #2873b9;
-        background-image: url(../images/back/mainBackgroung22.jpg), url(../images/back/2.jpg);
-        background-position: center, 0px 0px;
-        background-repeat: no-repeat, repeat-x;
-        background-size: contain, cover;
+        background-image: url(../images/back/home-main-bg.jpg), url(../images/back/home-side-bg.jpg), url(../images/back/home-side-bg.jpg);
+        background-position: center, 0px 0px,  0px right;
+        background-repeat: no-repeat;
+        background-size: contain, auto, auto;
 
-        animation: animatedBackground 40s linear infinite;
+        animation: animatedBackground 30s linear infinite;        
 
         padding-top: 9em;
 		height: 650px;
@@ -257,19 +264,20 @@ header .social-icon li a
         font-family: Ubuntu;
         font-style: normal;
         
-}
-@keyframes animatedBackground {
-	from { background-position: center, 100% 100% }
-	to { background-position:  center, 0 0 ; }
-}
-#home h2
-	{
-        color: #FFD427;
-        text-shadow: 3px 3px 5px black;
-        font-family: 'Seymour One', Arial;
-        font-weight: 100;
-        font-size: 38px;        
-	}
+    }
+    @keyframes animatedBackground 
+        {
+            from { background-position: center, 0 100%, 100% 100%}
+            to   { background-position: center, 0 0,    100% 0%}
+        }
+    #home h2
+        {
+            color: #FFD427;
+            text-shadow: 3px 3px 5px black;
+            font-family: 'Seymour One', Arial;
+            font-weight: 100;
+            font-size: 38px;        
+        }
 .home-row
 {
     position: relative;
@@ -310,7 +318,6 @@ figcaption
             background-image: url('../images/back/contacts-bg3.png'), url('../images/back/jump.png');
             background-repeat: no-repeat, no-repeat;    
             background-position: 10% 50%, 90% 50%;
-
         }
         #news .section-header *
             {
@@ -423,8 +430,7 @@ figcaption
     #service .col-md-12:nth-child(2)
         {
             background-color: aliceblue;
-            border-radius: 15px;
-            
+            border-radius: 15px;            
         }
     #service h2
         {
@@ -444,62 +450,6 @@ figcaption
         }
 /* end service */
 
-/* start portfolio */
-#portfolio
-	{
-		padding-bottom: 80px;
-	}
-#portfolio .col-md-3
-	{
-		padding: 0px;
-	}
-	.portfolio-thumb, 
-	.portfolio-overlay {
-		max-width: 450px;
-	}
-#portfolio .portfolio-thumb
-	{
-		overflow: hidden;
-		padding: 0;
-		margin: 0 auto;
-	}
-#portfolio .portfolio-thumb .portfolio-overlay
-	{
-		background: #28a7e9;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;	
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		position: absolute;
-		padding: 20px 10px 20px 20px;
-		margin-left: auto;
-		margin-right: auto;
-		-webkit-transition: all 0.4s ease-in-out;
-		        transition: all 0.4s ease-in-out;
-	}
-#portfolio .portfolio-thumb .portfolio-overlay h4
-	{
-		font-weight: bold;
-		padding-bottom: 10px;
-	}
-#portfolio .portfolio-thumb .portfolio-overlay .btn
-	{
-		background: none;
-		border: 1px solid #fff;
-		border-radius: 2px;
-		color: #fff;
-		font-weight: bold;
-	}
-#portfolio .portfolio-thumb:hover .portfolio-overlay
-	{
-		cursor: pointer;
-		opacity: 0.8;
-	}
-/* end portfolio */
-
 /* start contact */
 #contact
 	{
@@ -507,36 +457,39 @@ figcaption
         background-image: url('../images/back/contacts-bg.gif'), url('../images/back/contacts-bg2.jpg');
         background-repeat: repeat-x, no-repeat;
         background-attachment: scroll ;
-        background-position: 0% 0%, 100% 100%;		
+        background-position: 0% 0%, 0% 100%;		
 	}
     #contact .section-header
         {
             background-image: url('../images/back/kids_pool_sun_glasses.png'), url('../images/back/baby_pool_sun_glasses.png');
             background-repeat: no-repeat, no-repeat;    
             background-position: 10% 50%, 90% 50%;
+            margin-bottom: 40px;
         }
     #contact h2
         {
             text-shadow: 2px 2px 3px #333;
         }
-    #contact address
-        {
-            padding-top: 30px;
-        }
     #contact address .address-title
         {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 1.5em;
             padding-bottom: 10px;
         }
-    #contact address span
+    #contact address p, #contact .adress
         {
-            display: block;
-            padding-bottom: 30px;
+            text-align: right;
+        }
+    #contact .adress
+    {
+        margin: 0 0 10px;
+    }
+    #contact .fa
+        {
+            font-size: 1.5em;
         }
     #contact address .fa
         {
-            border: 1px solid #fff;
             border-radius: 2px;
             width: 40px;
             height: 40px;
@@ -544,8 +497,65 @@ figcaption
             text-align: center;
             margin-right: 10px;
             margin-bottom: 10px;
+            color:#0580f2;
+            border: 1px solid #aaa;
+        }
+    #contact a[href^="mailto:"]
+        {
+            color: #333;
+        }    
+    #contact a[href^="tel:"]
+        {
+            text-decoration: underline;
+            color: #333;
         }
 /* end contact */
+
+/* start construct */
+#construct
+	{
+        background-color: #2873b9;
+        background-image:  url(../images/back/construct.png), url(../images/back/2.jpg) ;
+        background-size:  auto, cover;
+        background-repeat: no-repeat;
+        background-position: 95% 95%;
+		height: calc(100vh -  130px);
+        font-family: Ubuntu;
+    }
+    #construct .container
+        {
+            position: relative;
+            top: calc( 50% - 2em);
+        }
+    #construct .text
+        {
+            color: yellow;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 1px 1px 3px #222;
+        }
+        #construct .text p
+            {
+                margin-bottom: 1em;
+                font-weight: 600;
+            }
+        #construct .text a
+            {
+                color: #f8d800;
+                text-decoration: none;
+        -webkit-transition: all 0.4s ease-in-out;
+		        transition: all 0.4s ease-in-out;
+                padding: 13px;
+                border-radius: 5px;
+                border: 1px solid #f8d800;                
+            }
+        #construct .text a:hover
+            {
+                color: #2873b9;
+                background-color: #f8d800;
+                text-shadow:none;
+            }
+/* end construct */
 
 /* start copyright */
 #copyright
@@ -564,6 +574,7 @@ figcaption
 		position: relative;
 		padding: 0;
 		margin: 0;
+        text-align: right;
 	}
 .social-icon h4
 	{
@@ -592,7 +603,7 @@ figcaption
 .social-icon li a:hover
 	{
         color: #28a7e9;
-		background: #eee;
+		background: #eeeeee;
 		border-color: transparent;
 	}
 /* end social icon */
@@ -626,7 +637,7 @@ figcaption
 		position: fixed;
     	top: 0;
 	}
-	header {
+	header:not([class="exclude-margin"]) {
 		margin-top: 70px;
 	}
 	header .social-icon {
@@ -645,6 +656,10 @@ figcaption
 		padding-bottom: 5px;
 		line-height: 35px;
 	}
+    #construct
+    {
+        height: calc(100vh -  180px);        
+    }
 }
 /* end 768 media quires */
 
@@ -664,28 +679,79 @@ figcaption
 		{
 			font-size: 16px;
 		}
-
 }
 /* end 360 media quires */
 
 
 @media only screen and (max-width: 1199px) and (min-width: 992px)
 {
+    #home
+    {
+        background-image: url(../images/back/home-main-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: none;
+    }
     #home .container
     {
         width: 100%;
-    }
-    .home-col p 
-    {
-        margin: 4px;
     }
     figcaption
     {
         padding-left: 1.4em;
     }
+
+    /* start news section*/
+    #news .media-body
+    {
+        padding-left: 30px;
+    }
+    #news .media-heading-wrapper
+    {
+        min-height: 90px;
+    }
+    /* end news section*/
+    /* start team section*/
+    #team .section-header
+    {
+        background-position: 5%  50%, 95% 50%;
+    }    
+    /* end team section*/
+    #contact
+	{
+        background-image: url('../images/back/contacts-bg.gif'), url('../images/back/contacts-bg2-mid.jpg');
+        background-position: 0% 0%, 10% 100%;		
+	}
 }
 @media only screen and (max-width: 991px) and (min-width: 767px)
 {
+    #home
+    {        
+        background-image: url(../images/back/home-main-bg_mid.jpg), 
+                          url(../images/back/home-top-bg_mid.jpg), 
+                          url(../images/back/home-top-bg_mid.jpg);
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: containauto;        
+        animation: animatedBackground-lowRes 10s linear infinite;        
+
+    }
+    @keyframes animatedBackground-lowRes
+        {
+            from { background-position:center, 0 -55%, 0 100%}
+            to   { background-position:center, 0   0%, 0 155%}            
+        }
+    .nav>li>a
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .section-header h2
+    {
+        font-size: 34px;
+    }
+    /* start home section*/ 
     #home .container
     {
         width: 100%;
@@ -694,34 +760,227 @@ figcaption
     {
         width: 250px;
     }    
-    .home-row
-    {
-        padding-top: 2em;
-    }
     .home-col
     {
-        transform: translateY(1.5em);
-        background-color: rgba(40,115,185,0.7);
+        transform: translateY(9em);        
     }
-    .home-row_bg
+    #home h2
     {
-        display: none;
-    }
-        #home h2
-    {
-        font-size: 32px;
-    }
-    .nav>li>a
-    {
-        padding-left: 5px;
-        padding-right: 5px;
+        font-size: 28px;
     }
     figcaption
     {
         padding-left: 1.4em;
     }
-}
-
-h2 {
+    /* end home section*/ 
     
+    /* start news section*/
+    #news .media-body
+    {
+        padding-left: 30px;
+    }
+    #news .section-header, 
+    #team .section-header
+    {
+        background-position: 0% 50%, 100% 50%;        
+    }
+    #contact
+	{
+        background-image: url('../images/back/contacts-bg.gif'), url('../images/back/contacts-bg2-mid.jpg');
+        background-position: 0% 0%, 10% 100%;		
+	}
+    #contact .adress
+    {
+        position: relative;
+        padding-right: 56px;
+        text-align: right;
+        margin: 0 0 10px;
+    }
+    #contact .fa-map-marker
+    {
+        position: absolute;
+        bottom: -10px;
+        left: 295px;
+    }        
+}
+@media only screen and (max-width: 766px)
+{
+    .navbar-default .navbar-nav li a
+	{
+		font-size: 1.4em;
+		height: 40px;
+		line-height: 30px;        
+	}
+    .navbar-default .navbar-nav > li > a.current 
+    { 	
+        border-bottom: none;
+        padding-left: 2em;
+        font-size: 1.7em;
+    } 
+    .navbar-default .navbar-nav li a:hover
+    {
+        line-height: 30px;        
+    }
+    .navbar-default .navbar-nav li a:not(.current ):hover
+    {
+        padding-left: 1em;
+    }
+    #home
+    {        
+        background-image: url(../images/back/home-main-bg_sm.jpg), 
+                          url(../images/back/home-top-bg_sm.jpg), 
+                          url(../images/back/home-top-bg_sm.jpg);
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: containauto;        
+        animation: animatedBackground-lowRes 10s linear infinite;        
+
+    }
+        @keyframes animatedBackground-lowRes
+        {
+            from { background-position:center, 0 -30%, 0 100%}
+            to   { background-position:center, 0   0%, 0 130%}            
+        }
+        .logo-col
+        {            
+            transform: translateY(16em);
+        }
+        .home-col
+        {
+            transform: translateY(-19em);
+        }
+        #home img
+        {
+            height: 200px;
+        }
+    /* start news section */
+    #news
+    {
+        padding-bottom: 10px ;
+    }
+    #news .section-header
+        {
+            background-image: none;             
+            border: none;
+            padding: 5px;
+        }    
+        #news .section-header h2
+        {
+            font-size: 40px;
+        }
+        .media {
+            min-height: inherit;
+            border-radius: 8px;
+            padding-bottom: 0px;
+        }
+        .col-md-4:not(:last-of-type) {
+            margin-bottom: 10px;            
+        }
+    /* end news section */
+    /* start service section */
+    #service 
+    {
+      padding-bottom: 0;  
+    }
+    #service .section-header
+        {
+            background-image: none;             
+            border: none;
+            padding: 5px;
+        }    
+        #service .section-header h2
+        {
+            font-size: 50px;
+        }
+        #service .col-md-12:not(.section-header)
+        {
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+    /* end service section */
+    /* start team section */
+    #team
+    {
+        padding-bottom: 10px ;
+    }
+    #team .section-header
+        {
+            background-image: none; 
+            padding-bottom: 10px ;
+        }
+        #team .section-header h2
+        {
+            font-size: 42px;
+        }
+    /* end team section */
+    /* start contact section*/
+    #contact
+        {
+            background-image: url('../images/back/contacts-bg.gif');
+        }
+        #contact .section-header
+            {
+                background-image: none;
+                padding-bottom: 10px ;
+            }
+        #contact .section-header h2
+            {
+                font-size: 60px;                
+            }
+        #contact .social-icon    
+            {
+                margin-bottom: 20px;
+                font-size: 1.5em;
+            }
+        #contact .fa
+            {
+                border: none;
+            }
+        #contact address .address-title
+            {
+                font-size: 2em;
+            }
+        #contact address p
+            {
+                font-size: 1.5em;
+            }
+        #contact .adress
+            {
+                font-size: 1.2em;
+            }
+        #contact address .fa 
+            {
+                border-radius: 5px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border: 2px solid #aaa;
+            }
+        #contact address a .fa:hover
+            {
+                font-size: 2em;
+            }
+        #contact .adress
+            {
+                margin: 0 0 10px;
+            }
+        #contact .social-icon li a
+            {
+                border-radius: 14px;
+                color: #fff;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+        #contact .social-icon li a:hover
+            {
+                color: #28a7e9;
+                background: #eeeeee;
+                border-color: transparent;
+            }     
+        #contact .social-icon li:not(:last-of-type) a
+            {
+                margin-right: 60px;                
+            }
+    /* end contact section*/
 }
