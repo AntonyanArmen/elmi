@@ -176,7 +176,7 @@ header .social-icon li a
         color: #f8d800;  
         text-shadow: 1px 1px 2px black;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 26px;
 		height: 70px;
 		line-height: 40px;
 		padding: 12px 0px 0px 12px;
@@ -448,6 +448,18 @@ figcaption
         {
             text-align: justify;
         }
+.float-left
+{
+    float: right;
+    
+}
+
+.service-illustration 
+{
+    max-width: 40%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
 /* end service */
 
 /* start contact */
@@ -838,8 +850,8 @@ figcaption
     }
         @keyframes animatedBackground-lowRes
         {
-            from { background-position:center, 0 -30%, 0 100%}
-            to   { background-position:center, 0   0%, 0 130%}            
+            from { background-position:center, 0 -20%, 0 100%}
+            to   { background-position:center, 0   0%, 0 120%}            
         }
         .logo-col
         {            
@@ -983,4 +995,10 @@ figcaption
                 margin-right: 60px;                
             }
     /* end contact section*/
+}
+@media only screen and (max-width: 370px)
+{
+    .media-body{
+        padding-left: 2em;
+    }
 }
