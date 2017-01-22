@@ -1,7 +1,7 @@
 body
 	{ 	
         color: #333;
-		font-family: 'UbuntuMedium', 'Open Sans', sans-serif;
+		font-family: 'Ubuntu', 'Open Sans', sans-serif;
 		font-weight: 300;
 		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
 	}
@@ -14,18 +14,15 @@ a:hover {
 	color: #0FF;
 }
 
-/* start h2 */
-h2
+.section-header-text
 	{
 		text-align: center;
-		font-size: 40px;
+		font-size: 2.5em;
         font-weight: 600;
 	}	
-/* end h2 */
 
 /* start about team service portfolio contact */
-#news, #team, #service,
-#portfolio, #contact
+#news, #team, #service, #contact
 	{
 		padding-bottom: 30px; 
         border-bottom: 1px solid #505050;
@@ -122,40 +119,44 @@ h2
 
 /* start header */
 header
-	{
-        background: #303030;
-        color: #fff;
-		min-height: 20px;
-		padding-top: 18px;
-		padding-bottom: 10px;
-	}
-header .fa
-	{
-		color: #28a7e9;
-	}
-header span
-	{
-		font-weight: bold;
-		padding-right: 10px;
-		padding-left: 4px;
-	}
-header a
-	{
-		color: #999;
-		font-weight: 600;
-	}
-header .social-icon
-	{
-		text-align: right;
-	}
-header .social-icon li a
-	{
-		border: none;
-		width: 20px;
-		height: 20px;
-		line-height: 20px;
-		text-align: center;
-	}
+{
+    background: #303030;
+    color: #fff;
+    min-height: 20px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+    header .fa
+    {
+        color: #28a7e9;
+    }
+    header span
+    {
+        font-weight: bold;
+        padding-right: 10px;
+        padding-left: 4px;
+    }
+    header a
+    {
+        color: #999;
+        font-weight: 600;
+    }
+    header .social-icon
+    {
+        text-align: right;
+    }
+    header .social-icon li a
+    {
+        border: none;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .header-phone
+    {
+        margin-bottom: 0;
+    }
 /* end header */
 
 /* start nagivation */
@@ -270,7 +271,7 @@ header .social-icon li a
             from { background-position: center, 0 100%, 100% 100%}
             to   { background-position: center, 0 0,    100% 0%}
         }
-    #home h2
+    #home h1
         {
             color: #FFD427;
             text-shadow: 3px 3px 5px black;
@@ -285,11 +286,10 @@ header .social-icon li a
 }
 .home-col
 {
-        transform: translateY(12em);
+    transform: translateY(12em);
 }
 figcaption
 {
-    /*color: #2873b9;*/
     color: #fff;
     font-size: .83em;
     width: 308px;
@@ -323,7 +323,7 @@ figcaption
             {
                 text-shadow: 1px 1px 3px #006F4B;
             }
-    #news h2
+    #news .section-header-text
         {    
             color: #00458D;
         }
@@ -334,6 +334,15 @@ figcaption
             border:1px solid #00FFAB;
             border-radius: 5px;    
             padding-bottom: 10px;
+        }
+    .media-heading
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Ubuntu';
+            padding-top: 20px;
+            padding-left: 52px;
+            color: #1387FF;            
         }
     .media-body
         {
@@ -369,15 +378,6 @@ figcaption
                     {
                         color: #FFB954;
                     }
-        #news .media-heading-wrapper h3
-            {
-                font-size: 23px;
-                font-weight: bold;
-                font-family: 'Ubuntu';
-                padding-top: 20px;
-                padding-left: 52px;
-                color: #1387FF;
-            }
 /* end about */
 
 /* start team */
@@ -394,18 +394,23 @@ figcaption
             background-repeat: no-repeat, no-repeat;    
             background-position: 10%  50%, 90% 50%;
         }
-    #team h2
+    #team .section-header-text
         {
             color: #635378;
             text-shadow: 2px 2px 4px #eeeeef;
         }
-        #team .team-wrapper
+    #team .team-wrapper
         {
             background: #fffbf0;
             padding: 20px;
             margin-top: 30px;
             border-radius: 15px;
             color: #333;
+        }
+    #team .section-subtitle
+        {
+            font-size: 1.3em;    
+            text-transform: uppercase;
         }
 /* end team */
 
@@ -432,19 +437,20 @@ figcaption
             background-color: aliceblue;
             border-radius: 15px;            
         }
-    #service h2
+    #service .section-header-text
         {
             color: yellow;
             text-shadow: 2px 2px 4px #222;
         }
-    #service h4
+     #service h2
         {
             color: orange;
             font-weight: 600;
             padding-top: 10px;
             padding-bottom: 14px;
+            font-size: 1.3em;
         }
-    #service p
+    #service .section-content
         {
             text-align: justify;
         }
@@ -478,7 +484,7 @@ figcaption
             background-position: 10% 50%, 90% 50%;
             margin-bottom: 40px;
         }
-    #contact h2
+    #contact .section-header-text
         {
             text-shadow: 2px 2px 3px #333;
         }
@@ -516,7 +522,15 @@ figcaption
         {
             color: #333;
         }    
-    #contact a[href^="tel:"]
+    .adress-inner
+    {        
+        display: inline-block;
+    }
+    .phone-numbers{
+        position: relative;
+        top: .5em;     
+    }
+    .phone-numbers>a[href^="tel:"]
         {
             text-decoration: underline;
             color: #333;
@@ -638,7 +652,7 @@ figcaption
 			padding-top: 80px;
 			padding-bottom: 60px;
 		}
-	#home h2
+	#home h1
 		{
 			font-size: 23px;
 		}
@@ -687,7 +701,7 @@ figcaption
 			padding-top: 40px;
 			padding-bottom: 40px;
 		}
-	#home h2
+	#home h1
 		{
 			font-size: 16px;
 		}
@@ -759,7 +773,7 @@ figcaption
         padding-left: 5px;
         padding-right: 5px;
     }
-    .section-header h2
+    .section-header-text
     {
         font-size: 34px;
     }
@@ -776,7 +790,7 @@ figcaption
     {
         transform: translateY(9em);        
     }
-    #home h2
+    #home h1
     {
         font-size: 28px;
     }
@@ -808,10 +822,10 @@ figcaption
         text-align: right;
         margin: 0 0 10px;
     }
-    #contact .fa-map-marker
+    #contact .contact-icon
     {
         position: absolute;
-        bottom: -10px;
+        bottom: -15px;
         left: 295px;
     }        
 }
@@ -865,6 +879,10 @@ figcaption
         {
             height: 200px;
         }
+    .section-header-text
+        {
+            font-size: 4em;
+        }
     /* start news section */
     #news
     {
@@ -876,10 +894,6 @@ figcaption
             border: none;
             padding: 5px;
         }    
-        #news .section-header h2
-        {
-            font-size: 40px;
-        }
         .media {
             min-height: inherit;
             border-radius: 8px;
@@ -900,10 +914,6 @@ figcaption
             border: none;
             padding: 5px;
         }    
-        #service .section-header h2
-        {
-            font-size: 50px;
-        }
         #service .col-md-12:not(.section-header)
         {
             margin: 10px;
@@ -920,10 +930,6 @@ figcaption
             background-image: none; 
             padding-bottom: 10px ;
         }
-        #team .section-header h2
-        {
-            font-size: 42px;
-        }
     /* end team section */
     /* start contact section*/
     #contact
@@ -935,30 +941,19 @@ figcaption
                 background-image: none;
                 padding-bottom: 10px ;
             }
-        #contact .section-header h2
-            {
-                font-size: 60px;                
-            }
         #contact .social-icon    
             {
                 margin-bottom: 20px;
                 font-size: 1.5em;
             }
-        #contact .fa
-            {
-                border: none;
-            }
         #contact address .address-title
             {
                 font-size: 2em;
             }
-        #contact address p
-            {
-                font-size: 1.5em;
-            }
         #contact .adress
             {
                 font-size: 1.2em;
+                margin: 0 0 10px;                
             }
         #contact address .fa 
             {
@@ -968,13 +963,9 @@ figcaption
                 line-height: 60px;
                 border: 2px solid #aaa;
             }
-        #contact address a .fa:hover
+        #contact address a:hover .fa
             {
                 font-size: 2em;
-            }
-        #contact .adress
-            {
-                margin: 0 0 10px;
             }
         #contact .social-icon li a
             {
