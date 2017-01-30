@@ -1,0 +1,45 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+    <loc>http://elmi161.ru/</loc>
+    <image:image>
+      <image:loc>http://elmi161.ru/images/salt1.jpg</image:loc>
+      <image:caption>Внутри соляной пещеры. Ракета.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://elmi161.ru/images/salt2.jpg</image:loc>
+      <image:caption>Внутри соляной пещеры. Звёздное небо.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://elmi161.ru/images/salt3.jpg</image:loc>
+      <image:caption>Внутри соляной пещеры. Удобные кресла.</image:caption>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Открытие аквацентра</news:name>
+        <news:language>ru</news:language>
+      </news:publication>
+      <news:publication_date>2017-01-30</news:publication_date>
+      <news:title>Открытие аквацентра</news:title>
+      <news:keywords>Элми, открытие, акция, бесплатное занятие, аквацентр</news:keywords>
+    </news:news>
+    <news:news>
+      <news:publication>
+        <news:name>Приведи друга</news:name>
+        <news:language>ru</news:language>
+      </news:publication>
+      <news:publication_date>2017-01-30</news:publication_date>
+      <news:title>Акция Приведи друга</news:title>
+      <news:keywords>Элми, акция, бесплатное занятие, аквацентр</news:keywords>
+    </news:news>
+    <news:news>
+      <news:publication>
+        <news:name>Акция «СПАСИБО!»</news:name>
+        <news:language>ru</news:language>
+      </news:publication>
+      <news:publication_date>2017-01-30</news:publication_date>
+      <news:title>Акция «СПАСИБО!»</news:title>
+      <news:keywords>Элми, акция, скидка, абонемент, аквацентр</news:keywords>
+    </news:news>
+</url>
+</urlset>
