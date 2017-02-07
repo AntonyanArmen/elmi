@@ -1,4 +1,3 @@
 User-Agent: *
-Disallow: /images
 Disallow: /admin
-sitemap: http://elmi161.ru/sitemap.xml
+Sitemap: http://elmi161.ru/sitemap.xml
