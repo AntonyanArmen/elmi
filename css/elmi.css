@@ -454,6 +454,24 @@ figcaption
         {
             text-align: justify;
         }
+    .service-detail{
+        display: inline-block;
+        width: 100%;
+        padding-top:  .2em;
+        padding-bottom  : .2em;
+        text-align: center;
+        color: #2873b9;
+        font-size: 1.1em;        
+        background-color: #D5DFE6;
+        }
+    .service-detail:hover{
+        color: #428fd6;
+        background-color: #b8c8d4;
+        background: linear-gradient(to right, rgba(184,200,212,1) 0%,
+                                              rgba(0,0,0,0.05) 50%,
+                                              rgba(184,200,212,1) 100%);
+        text-decoration: none;        
+        }
 .float-left
 {
     float: right;
