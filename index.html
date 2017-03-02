@@ -26,6 +26,14 @@
         <script src="js/jquery.singlePageNav.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.min.js"></script>
+        <noscript>
+            <style>
+                .preloader
+                {
+                    display: none !important; 
+                }
+            </style>
+        </noscript>
 	</head>
 	<body id="top">
 		<!-- start preloader -->
@@ -40,17 +48,19 @@
     	</div>
     	<!-- end preloader -->
         <!-- start header -->
-        <header id="top">
+        <header id="top" class="templatemo-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
                         <p class="header-phone"><i class="fa fa-phone">&nbsp; </i><a href="tel:+7(863)221-41-35">+7(863) 221-41-35</a></p>
-                        <p class="header-phone"><i class="fa fa-phone">&nbsp; </i><a href="tel:+7(863)210-01-04">+7(863) 210-01-04</a></p>
                     </div>
-                    <div class="col-md-5 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-sm-push-3 col-xs-6">
                         <p><i class="fa fa-envelope-o"></i> <a href="mailto:info@elmi161.ru">info@<span class="hide">null</span>elmi161.ru</a></p>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-sm-3 col-sm-pull-3 col-xs-6">
+                        <p class="header-phone"><i class="fa fa-phone">&nbsp; </i><a href="tel:+7(863)210-01-04">+7(863) 210-01-04</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
                         <ul class="social-icon">
                             <li><span>Cоц. сети</span></li>
                             <!--<li><a href="#" class="fa fa-facebook"></a></li>-->
@@ -60,32 +70,37 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="nav-container">
+                <div class="container">
+                    <div class="row">
+                        <!-- start navigation -->
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon icon-bar"></span>
+                                    <span class="icon icon-bar"></span>
+                                    <span class="icon icon-bar"></span>
+                                </button>
+                                <a href="#top" class="navbar-brand"><i class="fa fa-home"></i> ЭЛМИ</a>
+                            </div>
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#news">Новости и акции</a></li>
+                                    <li><a href="#service">Услуги</a></li>
+                                    <li><a href="#team">Организация работы</a></li>
+                                    <li><a href="#contact">Контакты</a></li>
+                                    <li><a href="construct.html" class="external">Галерея</a></li>
+                                    <li><a href="construct.html" class="external">Отзывы</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- end navigation -->   
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- end header -->
-    	<!-- start navigation -->
-		<nav class="navbar navbar-default templatemo-nav" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon icon-bar"></span>
-						<span class="icon icon-bar"></span>
-						<span class="icon icon-bar"></span>
-					</button>
-					<a href="#top" class="navbar-brand"><i class="fa fa-home"></i> ЭЛМИ</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#news">Новости и акции</a></li>
-						<li><a href="#service">Услуги</a></li>
-						<li><a href="#team">Организация работы</a></li>
-						<li><a href="#contact">Контакты</a></li>
-						<li><a href="construct.html" class="external">Галерея</a></li>
-						<li><a href="construct.html" class="external">Отзывы</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- end navigation -->
     	<!-- start home -->
     	<section id="home">
             <div class="container" >
@@ -321,7 +336,7 @@
                     <div class="col-md-1 text-center">
                         <!— Yandex.Metrika informer —> 
                         <a href="https://metrika.yandex.ru/stat/?id=43100419&amp;from=informer" 
-                        target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/43100419/3_0_FFFF.." 
+                        target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/43100419/3_0_FFFFFFFF_EFEFEFFF_0_pageviews" 
                         style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="43100419" data-lang="ru" /></a> 
                         <!— /Yandex.Metrika informer —> 
 

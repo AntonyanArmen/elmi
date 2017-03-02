@@ -5,7 +5,7 @@ $(function(){
     /* Smooth scroll and Scroll spy (https://github.com/ChrisWojcik/single-page-nav)    
     ---------------------------------------------------------------------------------*/ 
     $('.templatemo-nav').singlePageNav({
-        offset: $(".templatemo-nav").height(),
+        offset: $(".templatemo-nav").height() + $("header").height(),
         filter: ':not(.external)',
         updateHash: false
     });
@@ -13,9 +13,11 @@ $(function(){
     $(window).scroll(function(){
         if($(this).scrollTop()>58){
             $(".templatemo-nav").addClass("sticky");
+           // $("header").addClass("sticky");
         }
         else{
             $(".templatemo-nav").removeClass("sticky");
+            //$("header").removeClass("sticky");
         }
     });
     
