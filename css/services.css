@@ -1,0 +1,86 @@
+/* start service */
+#service
+{
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #505050;
+    background-color: #b1c8d6;
+    background-image:  url('../images/back/skulls.png');
+    background-blend-mode: luminosity;
+}
+    #service .section-header
+        {
+            background-color: #e1edf5;
+            background-image:  url('../images/back/bath.gif'), url('../images/back/news-bg2.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: 10% 50%, 90% 50%;
+            border: 20px solid #c4e4ff;
+            border-radius: 90px;
+            margin: 10px 0;
+        }
+    #service .col-md-12:nth-child(2)
+        {
+            background-color: aliceblue;
+            border-radius: 15px;            
+        }
+    #service .section-header-text
+        {
+            color: yellow;
+            text-shadow: 2px 2px 4px #222;
+        }
+     #service h2
+        {
+            color: orange;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            font-size: 1.3em;
+        }
+    #service .section-content
+        {
+            text-align: justify;
+        }
+    .service-detail{
+        display: inline-block;
+        width: 100%;
+        padding-top:  .2em;
+        padding-bottom  : .2em;
+        text-align: center;
+        color: #2873b9;
+        font-size: 1.1em;        
+        background-color: #D5DFE6;
+        }
+    .service-detail:hover{
+        color: #428fd6;
+        background-color: #b8c8d4;
+        background: linear-gradient(to right, rgba(184,200,212,1) 0%,
+                                              rgba(0,0,0,0.05) 50%,
+                                              rgba(184,200,212,1) 100%);
+        text-decoration: none;        
+        }
+
+    .service-illustration {
+        max-width: 40%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+/* end service */
+@media only screen and (max-width: 766px){
+    /* start service section */
+    #service {
+      padding-bottom: 0;  
+      padding-top:8em;
+    }
+    #service .section-header
+        {
+            background-image: none;             
+            border: none;
+            padding: 5px;
+        }    
+        #service .col-md-12:not(.section-header)
+        {
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+    /* end service section */
+    
+}
