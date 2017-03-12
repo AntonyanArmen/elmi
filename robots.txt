@@ -1,14 +1,10 @@
 User-Agent: *
 Disallow: /admin
 Disallow: /construct.html
-Disallow: /cave.html
-Disallow: /waterpool.html
 
 User-Agent: Yandex
 Disallow: /admin
 Disallow: /construct.html
-Disallow: /cave.html
-Disallow: /waterpool.html
 Host: www.elmi161.ru
 
 Sitemap: http://www.elmi161.ru/sitemap.xml
