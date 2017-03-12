@@ -27,15 +27,37 @@
             color: yellow;
             text-shadow: 2px 2px 4px #222;
         }
+	#service h1
+        {
+            color: orange;
+            font-weight: 800;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            font-size: 1.5em;
+        }
      #service h2
         {
             color: orange;
-            font-weight: 600;
+            font-weight: 800;
             padding-top: 10px;
             padding-bottom: 14px;
             font-size: 1.3em;
         }
-    #service .section-content
+	#service h3
+        {
+            color: orange;
+            font-weight: 800;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            font-size: 1.1em;
+        }
+	#service li {
+		list-style: none;
+		background: url(../images/ul.png) no-repeat 0 4px;
+		padding-left: 24px;
+	   }
+		
+	#service .section-content
         {
             text-align: justify;
         }

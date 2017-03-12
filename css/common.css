@@ -357,3 +357,59 @@ header
         line-height: 0;
 	}
 }
+
+.price
+{
+	background: #20B2AA; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+	text-align: center;
+	text-transform: uppercase;
+	font-family: inherit;
+    -moz-border-radius: 10px; /* Для Firefox 3 */
+    -webkit-border-radius: 10px; /* Для Safari 4 и Chrome */
+    border-radius: 10px; /* Для современных браузеров */
+}
+
+.tarif 
+{
+	text-align: center; /*располагаем содержимое блока по центру*/
+}
+
+.tarif div
+{
+	padding: 5px;
+}
+
+.block
+{ 
+	border-color: #20B2AA;
+	border-style: solid;
+	padding: 10px;
+	-moz-border-radius: 10px; /* Для Firefox 3 */
+    -webkit-border-radius: 10px; /* Для Safari 4 и Chrome */
+    border-radius: 10px; /* Для современных браузеров */
+}
+
+.block ul
+{
+	padding: 0; margin: 0;
+	text-align: initial;
+}
+
+.block p
+{
+	margin-top: 0.1em; /* Отступ сверху */
+    margin-bottom: 0.1em; /* Отступ снизу */
+}
+
+.blockindex
+{
+	border-color: #20B2AA;
+	border-style: solid;
+	padding: 10px;
+	margin: 10px;
+    -moz-border-radius: 10px; /* Для Firefox 3 */
+    -webkit-border-radius: 10px; /* Для Safari 4 и Chrome */
+    border-radius: 10px; /* Для современных браузеров */
+}
