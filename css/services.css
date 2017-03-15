@@ -80,12 +80,13 @@
         text-decoration: none;        
         }
 
-    .service-illustration {
-        max-width: 40%;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
 /* end service */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {    
+    .service-illustration {
+        transform: scale(0.75);
+    }
+    
+}
 @media only screen and (max-width: 766px){
     /* start service section */
     #service {
@@ -103,6 +104,9 @@
             margin: 10px;
             padding-bottom: 10px;
         }
+    .service-illustration {
+        margin-top: 10px;
+    }
     /* end service section */
     
 }
