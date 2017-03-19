@@ -371,18 +371,15 @@ header
     border-radius: 10px; /* Для современных браузеров */
 }
 
-.tarif 
-{
+.tarif{
 	text-align: center; /*располагаем содержимое блока по центру*/
 }
 
-.tarif div
-{
+.tarif div{
 	padding: 5px;
 }
 
-.block
-{ 
+.block{ 
 	border-color: #20B2AA;
 	border-style: solid;
 	padding: 10px;
@@ -390,18 +387,19 @@ header
     -webkit-border-radius: 10px; /* Для Safari 4 и Chrome */
     border-radius: 10px; /* Для современных браузеров */
 }
+    .block ul
+    {
+        padding: 0; margin: 0;
+        text-align: initial;
+    }
 
-.block ul
-{
-	padding: 0; margin: 0;
-	text-align: initial;
-}
-
-.block p
-{
-	margin-top: 0.1em; /* Отступ сверху */
-    margin-bottom: 0.1em; /* Отступ снизу */
-}
+    .block p {
+        margin-top: 0.1em; /* Отступ сверху */
+        margin-bottom: 0.1em; /* Отступ снизу */
+    }
+    .orange-text{
+    color: orange;
+    }
 
 .blockindex
 {

@@ -1,7 +1,18 @@
 /* HTML document is loaded. DOM is ready.
 -------------------------------------------*/
 $(function(){
-
+     /* Smooth scroll and Scroll spy (https://github.com/ChrisWojcik/single-page-nav)    
+     ---------------------------------------------------------------------------------
+    $('.nav-container').singlePageNav({
+        offset: $(".templatemo-nav").height(),
+        filter: ':not(.external)',
+        updateHash: false
+    });
+       $('.templatemo-nav').singlePageNav({
+        offset: $(".templatemo-nav").height(),
+        filter: ':not(.external)',
+        updateHash: false
+        });*/
     /* start navigation top js */
     $(window).scroll(function(){
         if($(this).scrollTop()>58){
@@ -10,6 +21,9 @@ $(function(){
         else{
             $(".templatemo-nav").removeClass("sticky");
         }
+    });
+    $(window).show( function(){
+        $(this).scrollTop(58);    
     });
     
     /* Hide mobile menu after clicking on a link
