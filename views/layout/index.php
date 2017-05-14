@@ -37,9 +37,9 @@
     <link rel="stylesheet" href="css/services.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/custom.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/custom.js"></script>
     <noscript>
         <style>
             .preloader
@@ -105,7 +105,7 @@
                             <li><a href="index.html#service" class="<?php  echo isset($not_main_page)&$not_main_page? 'external ': ''; echo isset($service_subpage)&$service_subpage? ' current': '' ?>"><?= isset($service_subpage)&$service_subpage? '<<': ''?> Услуги</a></li>
                             <li><a href="index.html#team" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?>>Организация работы</a></li>
                             <li><a href="index.html#contact" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?>>Контакты</a></li>
-                            <li><a href="gallery.html" class="<?php  echo isset($not_main_page)&$not_main_page? 'external ': ''; echo isset($images)? ' current': '' ?>">Галерея</a></li>
+                            <li><a href="gallery.html" class="<?php  echo isset($not_main_page)&$not_main_page? 'current': 'external';?>">Галерея</a></li>
                             <li><a href="construct.html" class="external">Отзывы</a></li>
                         </ul>
                     </div>

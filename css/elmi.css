@@ -293,10 +293,6 @@ figcaption
             }
 /* end construct */
 /* start gallery section */
-#gallery
-{
-    padding-top: 8em ;
-}
 .gallery-picture-container
 {
     margin-bottom: 1em;
@@ -506,6 +502,10 @@ figcaption
             margin-bottom: 10px;            
         }
     /* end news section */
+    #gallery
+    {
+        padding-top: 8em ;
+    }
     /* start team section */
     #team
     {
