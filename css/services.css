@@ -4,8 +4,7 @@
     padding-bottom: 30px; 
     border-bottom: 1px solid #505050;
     background-color: #b1c8d6;
-    background-image:  url('../images/back/skulls.png');
-    background-blend-mode: luminosity;
+    background-image:  url('../images/back/skulls_color.png');
 }
     #service .section-header
         {

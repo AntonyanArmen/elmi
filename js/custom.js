@@ -23,7 +23,8 @@ $(function(){
         }
     });
     $(window).show( function(){
-        $(this).scrollTop(58);    
+        console.log("scroll");
+        $(this).scrollTop(58);
     });
     
     /* Hide mobile menu after clicking on a link

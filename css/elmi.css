@@ -61,15 +61,15 @@ figcaption
 /* end home */
 
 /* start about 329977*/
-#news
+#news, #gallery
     {
-        background-color: aquamarine;
-        background-image: url('../images/back/greyfloral.png');
+        background-image: url('../images/back/floral.png');
         background-attachment: fixed;
-        background-blend-mode:  luminosity;
     }
-    #news .section-header 
-        {
+    #news .section-header,
+    #gallery .section-header
+
+    {
             background-color: aquamarine;
             border: 20px solid rgba(255,255,255,.5);
             border-radius: 90px;
@@ -78,12 +78,14 @@ figcaption
             background-repeat: no-repeat, no-repeat;    
             background-position: 10% 50%, 90% 50%;
         }
-        #news .section-header *
+        #news .section-header *,
+        #gallery .section-header *
             {
                 text-shadow: 1px 1px 3px #006F4B;
             }
+    #gallery .section-header-text,
     #news .section-header-text
-        {    
+        {
             color: #00458D;
         }
     .media
@@ -125,7 +127,8 @@ figcaption
                 text-align: center;
                 margin: 5px 15px 15px 5px;
             }
-                #news .media-heading-wrapper .fa-key
+                #news .media-heading-wrapper .fa-key,
+                #news .media-heading-wrapper .fa-gift
                     {
                       color: #FF5600;
                     }
@@ -289,7 +292,21 @@ figcaption
                 text-shadow:none;
             }
 /* end construct */
-
+/* start gallery section */
+#gallery
+{
+    padding-top: 8em ;
+}
+.gallery-picture-container
+{
+    margin-bottom: 1em;
+}
+.gallery-picture
+{
+    display: block;
+    margin: auto;
+}
+/* end gallery section */
 /* start 980 media quires */
 @media only screen and ( max-width: 980px ) {
 	#team .team-wrapper{
@@ -368,7 +385,7 @@ figcaption
                           url(../images/back/home-top-bg_mid.jpg);
         background-position: 0px 0px;
         background-repeat: no-repeat;
-        background-size: containauto;        
+        background-size: contain,auto;
         animation: animatedBackground-lowRes 10s linear infinite;        
 
     }
@@ -409,7 +426,8 @@ figcaption
     {
         padding-left: 30px;
     }
-    #news .section-header, 
+    #news .section-header,
+    #gallery .section-header,
     #team .section-header
     {
         background-position: 0% 50%, 100% 50%;        
@@ -468,11 +486,12 @@ figcaption
             font-size: 4em;
         }
     /* start news section */
-    #news
+    #news, #gallery
     {
         padding-bottom: 10px ;
     }
-    #news .section-header
+    #news .section-header,
+    #gallery .section-header
         {
             background-image: none;             
             border: none;
