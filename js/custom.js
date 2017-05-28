@@ -1,21 +1,10 @@
 /* HTML document is loaded. DOM is ready.
 -------------------------------------------*/
 $(function(){
-     /* Smooth scroll and Scroll spy (https://github.com/ChrisWojcik/single-page-nav)    
-     ---------------------------------------------------------------------------------
-    $('.nav-container').singlePageNav({
-        offset: $(".templatemo-nav").height(),
-        filter: ':not(.external)',
-        updateHash: false
-    });
-       $('.templatemo-nav').singlePageNav({
-        offset: $(".templatemo-nav").height(),
-        filter: ':not(.external)',
-        updateHash: false
-        });*/
+    var offset = $(".templatemo-nav").height();
     /* start navigation top js */
     $(window).scroll(function(){
-        if($(this).scrollTop()>58){
+        if($(this).scrollTop()>offset ){
             $(".templatemo-nav").addClass("sticky");
         }
         else{
@@ -23,8 +12,7 @@ $(function(){
         }
     });
     $(window).show( function(){
-        console.log("scroll");
-        $(this).scrollTop(58);
+        $(this).scrollTop(offset*2);
     });
     
     /* Hide mobile menu after clicking on a link

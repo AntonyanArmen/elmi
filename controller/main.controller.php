@@ -6,7 +6,8 @@ class MainController extends BaseController
     public function index()
     {
         return $this->render("waterpool/main",[
-                "title" => Main::$main_page_title
+                "title" => Main::$main_page_title,
+                "apply_js"      => "js/man.js"
             ]
         );
     }

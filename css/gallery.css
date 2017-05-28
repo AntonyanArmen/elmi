@@ -1,0 +1,13 @@
+#gallery .modal-dialog{
+    width: 100%;
+}
+#gallery .close {
+    color: red;
+    font-size: large;
+    padding: .6em;
+    opacity: .6;
+}
+.album-cover{
+    margin: 0 auto;
+    display: block;
+}

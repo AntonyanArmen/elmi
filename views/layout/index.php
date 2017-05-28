@@ -101,12 +101,12 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html#news" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?> >Новости и акции</a></li>
-                            <li><a href="index.html#service" class="<?php  echo isset($not_main_page)&$not_main_page? 'external ': ''; echo isset($service_subpage)&$service_subpage? ' current': '' ?>"><?= isset($service_subpage)&$service_subpage? '<<': ''?> Услуги</a></li>
-                            <li><a href="index.html#team" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?>>Организация работы</a></li>
-                            <li><a href="index.html#contact" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?>>Контакты</a></li>
-                            <li><a href="gallery.html" class="<?php  echo isset($not_main_page)&$not_main_page? 'current': 'external';?>">Галерея</a></li>
+                            <li><a href="index.html#news" <?= isset($not_main_page) && $not_main_page? 'class="external"': ''?> >Новости и акции</a></li>
+                            <li><a href="index.html#service" class="<?php  echo isset($not_main_page) && $not_main_page? 'external ': ''; echo isset($service_subpage)&$service_subpage? ' current': '' ?>"><?= isset($service_subpage)&$service_subpage? '<<': ''?> Услуги</a></li>
+                            <li><a href="index.html#team" <?= isset($not_main_page) && $not_main_page? 'class="external"': ''?>>Организация работы</a></li>
+                            <li><a href="gallery.html" class="<?php  echo isset($gallery) ? 'current': 'external';?>">Галерея</a></li>
                             <li><a href="construct.html" class="external">Отзывы</a></li>
+                            <li><a href="index.html#contact" <?= isset($not_main_page)&$not_main_page? 'class="external"': ''?>>Контакты</a></li>
                         </ul>
                     </div>
                 </nav>

@@ -29,8 +29,8 @@ class Model
     	self::INIT_FROM_DB_FAIL
     );
 
-    protected static $behaviours = [];
-    protected static $fields = [];
+    protected static $behaviours = array();
+    protected static $fields = array();
     protected static $field_types = [];
     protected static $related_links = [];
     protected static $db = NULL;
@@ -45,7 +45,7 @@ class Model
     {
         if (static::$fields === [])
         {
-            static::init_fields();
+                                                static::init_fields();
         }
 
         if ($id !== NULL)
@@ -517,7 +517,8 @@ class Model
     public static function field_labels()
     {
     	return [
-            static::PRIMARY_KEY_FIELD => 'Идентификатор'
+            static::PRIMARY_KEY_FIELD => 'Идентификатор' ,
+            static::NAME_KEY_FIELD    => 'Название'
     	];
     }
     
